@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AdwiseAds | Google Ads Agency</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+* {
+box-sizing: border-box;
+}
+body {
+margin: 0;
+font-family: 'Inter', sans-serif;
+background-color: #ffffff;
+color: #1f1f1f;
+}
+header {
+position: sticky;
+top: 0;
+background: #ffffff;
+border-bottom: 1px solid #eaeaea;
+padding: 1rem 3rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 1000;
+}
+.logo {
+font-weight: 700;
+font-size: 1.5rem;
+color: #007bff;
+}
+nav a {
+margin-left: 24px;
+color: #333333;
+text-decoration: none;
+font-weight: 500;
+transition: color 0.3s ease;
+}
+nav a:hover {
+color: #007bff;
+}
+.hero {
+padding: 5rem 2rem 3rem;
+text-align: center;
+background: #f8fafc;
+}
+.hero h1 {
+font-size: 2.5rem;
+margin-bottom: 1rem;
+}
+.hero p {
+font-size: 1.2rem;
+color: #555;
+max-width: 700px;
+margin: 0 auto 2rem;
+}
+.logos {
+overflow: hidden;
+white-space: nowrap;
+box-sizing: border-box;
+}
+.logos-track {
+display: inline-block;
+animation: scroll 20s linear infinite;
+}
+.logos-track img {
+height: 40px;
+margin: 0 30px;
+vertical-align: middle;
+filter: grayscale(100%) contrast(1.2);
+}
+@keyframes scroll {
+0% { transform: translateX(0); }
+100% { transform: translateX(-100%); }
+}
+.ticker {
+display: flex;
+justify-content: center;
+gap: 2rem;
+padding: 1rem 0;
+background: #fff;
+border-top: 1px solid #eee;
+border-bottom: 1px solid #eee;
+font-weight: 600;
+}
+.ticker span {
+font-size: 1.25rem;
+}
+.counter {
+font-weight: 700;
+color: #007bff;
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+const counters = [
+{ id: "adSpendCounter", prefix: "₹", suffix: "Cr+ Budget Managed", start: 0, end: 155 },
+{ id: "accountsCounter", prefix: "", suffix: "+ Accounts Audited", start: 0, end: 2400 },
+{ id: "roasCounter", prefix: "", suffix: "x ROAS", start: 3, end: 7, decimals: true }
+];
